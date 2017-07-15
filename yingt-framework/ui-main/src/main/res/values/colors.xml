@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="titleColor">#757575</color>
+    <color name="titleColorSelected">#F54D33</color>
+
+    <color name="psts_background_tab_pressed">#1AFFFFFF</color>
+    <color name="psts_background_tab_pressed_ripple">#AAFFFFFF</color>
+
+    <!-- 标题栏背景颜色 -->
+    <color name="yingt_uimain_toolbar_bgcolor">#fff64851</color>
+
+</resources>

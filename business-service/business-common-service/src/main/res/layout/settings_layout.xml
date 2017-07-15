@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent">
+    <LinearLayout 
+        android:orientation="vertical" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent">
+        
+        <!--  基本设置 -->
+        <com.ttlove.widget.PreferenceCategoryView
+            android:id="@+id/JiBenSettingCategory"
+            android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+        	android:layout_marginTop="10dip"
+        	android:layout_marginLeft="10dip"
+        	android:layout_marginRight="10dip"
+            />
+        <com.ttlove.widget.PreferenceCheckBoxView
+            android:id="@+id/KaiQiXiaoBaiDianView"
+            android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+         /> 
+         
+         <com.ttlove.widget.PreferenceCheckBoxView
+            android:id="@+id/KaiJiZiQiDongView"
+            android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+         /> 
+         
+         <com.ttlove.widget.PreferenceCheckBoxView
+            android:id="@+id/JiHuoLockScreenView"
+            android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+         /> 
+         
+        <com.ttlove.widget.PreferenceItemView
+            android:id="@+id/JingPinAppView"
+            android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+            />
+       
+         <!-- 显示设置 -->   
+        <com.ttlove.widget.PreferenceCategoryView
+            android:id="@+id/XianShiSettingCategoryView"
+            android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+        	android:layout_marginTop="10dip"
+        	android:layout_marginLeft="10dip"
+        	android:layout_marginRight="10dip"
+            />
+        
+        <com.ttlove.widget.PreferenceItemView
+            android:id="@+id/ZiDingYiPanelView"
+            android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+            />
+        
+        <com.ttlove.widget.PreferenceItemView
+            android:id="@+id/PanelDongHuaTeXiaoView"
+            android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+            />
+        
+        <!-- 更多 -->   
+        <com.ttlove.widget.PreferenceCategoryView
+            android:id="@+id/MoreCategoryView"
+            android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+        	android:layout_marginTop="10dip"
+        	android:layout_marginLeft="10dip"
+        	android:layout_marginRight="10dip"
+            />
+         
+         <com.ttlove.widget.PreferenceItemView
+            android:id="@+id/JianChaGengXinView"
+            android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+            />
+         <com.ttlove.widget.PreferenceItemView
+            android:id="@+id/GuanYuView"
+            android:layout_width="fill_parent" 
+        	android:layout_height="fill_parent"
+            />
+        
+    </LinearLayout>
+</ScrollView>

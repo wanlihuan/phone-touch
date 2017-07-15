@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item>
+        <bitmap
+            android:src="@drawable/yingt_uimain_diamond_upholstery"
+            android:tileMode="repeat" />
+    </item>
+    <item android:bottom="100dp">
+        <bitmap
+            android:gravity="center"
+            android:src="@drawable/yingt_uimain_splash_top" />
+    </item>
+</layer-list>

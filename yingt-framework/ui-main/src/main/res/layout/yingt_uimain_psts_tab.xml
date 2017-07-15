@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="7dp"
+    android:paddingBottom="7dp"
+    >
+    <TextView
+        android:id="@+id/yingt_uimain_psts_tab_title"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:singleLine="true" />
+    <FrameLayout
+        android:id="@+id/yingt_uimain_psts_tab_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/yingt_uimain_psts_tab_title"
+        android:paddingLeft="5dp"
+        >
+    </FrameLayout>
+</RelativeLayout>

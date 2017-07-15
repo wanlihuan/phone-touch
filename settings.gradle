@@ -1,0 +1,15 @@
+// 主题包生成模块
+include ':app-skin:app-skin-redwhite', ':float-panel-libs'
+include ':app-skin:app-skin-black'
+
+// app 个性化管理层
+include ':app:app-3dtouch'
+
+// 业务模块控制层
+include ':business-service:business-common-ui-main'
+include ':business-service:business-common-widget'
+include ':business-service:business-common-service'
+
+// 盈通框架
+include ':yingt-framework:ui-main'
+include ':yingt-framework:common-service'

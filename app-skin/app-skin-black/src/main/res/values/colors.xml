@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 标题栏背景颜色 -->
+    <color name="yingt_uimain_toolbar_bgcolor">@color/yt_color_03</color>
+</resources>

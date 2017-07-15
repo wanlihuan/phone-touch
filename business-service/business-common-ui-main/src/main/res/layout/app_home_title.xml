@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+    android:background="@drawable/title_background_img"
+  >
+    <ImageButton 
+        android:layout_gravity="left|center" 
+        android:id="@+id/titleIcon" 
+        android:background="@drawable/title_cache_back_btn_image" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="5.0dip" 
+        android:layout_alignParentLeft="true" 
+        android:layout_centerVertical="true" />
+    
+    <!-- style="@style/shadowTextBlack" 
+    android:textColor="@color/title_color"  -->
+    <TextView 
+        android:textSize="20.0dip" 
+        android:ellipsize="marquee" 
+        android:gravity="center_vertical" 
+        android:id="@+id/titleText" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:singleLine="true" 
+        android:layout_toRightOf="@id/titleIcon" 
+        android:layout_marginLeft="10dp"
+        android:layout_centerVertical="true" 
+        android:marqueeRepeatLimit="marquee_forever" 
+        android:textColor="#ffffffff"
+         />
+    
+    <TextView 
+        android:id="@+id/titlePointsText" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:textColor="#ffffffff"
+        />
+ </RelativeLayout>

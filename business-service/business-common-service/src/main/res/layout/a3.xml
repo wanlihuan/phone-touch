@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="match_parent"
+
+    >
+    <com.assistivetouch.widget.Workspace 
+        android:id="@+id/workspace"
+     	android:layout_width="@dimen/size_dialog" 
+     	android:layout_height="@dimen/size_dialog"
+     	android:layout_centerInParent="true"
+	/>
+</RelativeLayout>

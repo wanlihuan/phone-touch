@@ -1,0 +1,34 @@
+{
+    "version": "20170508",
+    "backgroundColor": "#ffffff",
+    "tabList": [
+        {
+            "functionCode": "TAB_1",
+            "fragmentName":"com.yingt.hq.ui.YtHangQingHomeFragment",
+            "title": "tab1",
+            "norImage": "file:///android_asset/uimainConfig/image/tab_assistant_gray.png",
+            "selectImage": "file:///android_asset/uimainConfig/image/tab_assistant_gray.png"
+        },
+        {
+            "functionCode": "TAB_2",
+            "fragmentName":"",
+            "title": "tab2",
+            "norImage": "file:///android_asset/uimainConfig/image/tab_assistant_gray.png",
+            "selectImage": "file:///android_asset/uimainConfig/image/tab_assistant_gray.png"
+        },
+        {
+            "functionCode": "TAB_3",
+            "fragmentName":"",
+            "title": "tab3",
+            "norImage": "file:///android_asset/uimainConfig/image/tab_assistant_gray.png",
+            "selectImage": "file:///android_asset/uimainConfig/image/tab_assistant_gray.png"
+        },
+        {
+            "functionCode": "TAB_4",
+            "fragmentName":"",
+            "title": "tab4",
+            "norImage": "file:///android_asset/uimainConfig/image/tab_assistant_gray.png",
+            "selectImage": "file:///android_asset/uimainConfig/image/tab_assistant_gray.png"
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/option_menu"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" 
+    android:paddingTop="3.0dip"
+    android:paddingBottom="3.0dip"
+    android:background="#5f000000"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal">
+       
+    <Button 
+        android:id="@+id/exchange_button"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:layout_centerInParent="true"
+    	android:background="@drawable/resource_detail_single_button_d"
+    	android:text="兑换(3积分)"
+    	android:textSize="17dp"
+    	android:paddingLeft="15dp"
+    	android:paddingRight="15dp"
+    	android:textColor="#ff000000"
+        />
+    <Button 
+        android:id="@+id/back_button"
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content" 
+    	android:layout_alignParentRight="true"
+    	android:layout_marginRight="15dp"
+    	android:layout_centerVertical="true"
+    	android:paddingTop="4dp"
+    	android:paddingBottom="4dp"
+    	android:paddingRight="4dp"
+    	android:paddingLeft="4dp"
+    	android:background="@drawable/us_btn_submit_pressed"
+        />
+</RelativeLayout>

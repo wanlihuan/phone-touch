@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:background="@android:color/transparent"
+    android:id="@+id/root"
+    >
+   
+    <LinearLayout 
+        android:id="@+id/dialog_title"
+        android:layout_width="fill_parent"
+		android:layout_height="wrap_content" 
+		android:layout_centerHorizontal="true"
+		android:layout_marginLeft="10dp"
+		android:layout_marginRight="10dp"
+		android:background="#FcFcFc"
+		android:paddingTop="10dp"
+		android:paddingBottom="10dp"
+		android:paddingLeft="10dp"
+        >
+        <TextView
+            android:id="@+id/title_text" 
+            android:layout_width="wrap_content"
+	    	android:layout_height="wrap_content"
+	    	android:textColor="#ff000000"
+	    	android:textSize="19dp"
+            />
+    </LinearLayout>
+    
+    <View 
+       android:id="@+id/divider_top"
+       android:layout_width="fill_parent"
+   	   android:layout_height="2dp"
+   	   android:layout_below="@id/dialog_title"
+   	   android:layout_centerHorizontal="true"
+   	   android:layout_alignLeft="@id/dialog_title"
+   	   android:layout_alignRight="@id/dialog_title"
+   	   android:background="#1E90FF"
+       />
+    
+   <LinearLayout
+       android:id="@+id/dialog_center_info" 
+       android:layout_width="match_parent"
+	   android:layout_height="wrap_content"
+	   android:orientation="horizontal" 
+	   android:layout_below="@id/divider_top"
+	   android:layout_centerHorizontal="true"
+	   android:layout_alignLeft="@id/dialog_title"
+   	   android:layout_alignRight="@id/dialog_title"
+   	   android:paddingLeft="5dip"
+   	   android:paddingRight="5dip"
+	   android:background="#FcFcFc"
+       >
+       
+   </LinearLayout>
+   
+    <View 
+       android:id="@+id/divider_bottom"
+       android:layout_width="fill_parent"
+   	   android:layout_height="1dp"
+   	   android:layout_below="@id/dialog_center_info"
+   	   android:layout_centerHorizontal="true"
+   	   android:layout_alignLeft="@id/dialog_title"
+   	   android:layout_alignRight="@id/dialog_title"
+   	   android:background="#1E90FF"
+       />
+    
+   <LinearLayout 
+       android:id="@+id/bottom_rootroot"
+       android:layout_width="match_parent"
+	   android:layout_height="wrap_content"
+	   android:orientation="horizontal"
+	   android:layout_below="@id/divider_bottom"
+	   android:layout_centerHorizontal="true"
+	   android:layout_alignLeft="@id/dialog_title"
+   	   android:layout_alignRight="@id/dialog_title"
+	   android:background="#FcFcFc"
+       >
+        <Button 
+            android:id="@+id/LeftButton"
+            android:layout_width="match_parent"
+	   		android:layout_height="wrap_content"
+	   		android:layout_weight="1.0"
+	   		android:background="@drawable/btn_dialog" 
+	   		android:paddingTop="10dp"
+			android:paddingBottom="10dp"
+	   		android:textSize="19dp"
+	   		android:text="确定"
+            />
+        <Button 
+            android:id="@+id/RightButton"
+            android:layout_width="match_parent"
+	   		android:layout_height="wrap_content"
+	   		android:background="@drawable/btn_dialog" 
+	   		android:layout_marginLeft="1.0dip"
+	   		android:paddingTop="10dp"
+			android:paddingBottom="10dp"
+	   		android:textSize="19dp"
+	   		android:layout_weight="1.0"
+	   		android:text="取消"
+            />
+	   
+   </LinearLayout>
+	
+</RelativeLayout>
+

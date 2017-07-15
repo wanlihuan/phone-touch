@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" 
+    android:id="@+id/grid_root">
+ <!-- android:background="@drawable/btn_default_normal_disable_focused" -->
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:textColor="#ff5f5f5f"
+        android:textSize="13dp"
+        android:gravity="center"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:drawablePadding="2dp"
+        android:scaleType="fitXY" />
+    
+    <ImageView
+        android:id="@+id/select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/icon_selection_s"
+        android:visibility="gone" />
+      <!-- 这里是当该图片被选上的时候打上小勾的,因此起初是隐藏不显示的 -->
+</RelativeLayout>

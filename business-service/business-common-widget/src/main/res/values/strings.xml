@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Touch手机助手</string>
+    
+    <!-- 配置默认主题 -->
+    <string name="PPP_default_theme_path">/JH8N32B3JJD6872N552BX5BWSJ/PPP_bi_ka_qiu_p</string>
+     <string name="TTT_default_theme_path">/JH8N32B3JJD6872N552BX5BWSJ/PPP_bi_ka_qiu_p</string>
+</resources>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+       
+       
+      
+    
+     <style name="SettingLabelStyle">
+        <item name="android:textColor">@color/summer_text</item>
+        <item name="android:paddingLeft">5.0dip</item>
+        <item name="android:paddingBottom">5.0dip</item>
+        <item name="android:layout_marginLeft">10.0dip</item>
+        <item name="android:textSize">16.0dip</item>
+    </style>
+    <style name="SettingItemStyle">
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:layout_marginLeft">10.0sp</item>
+        <item name="android:layout_marginRight">10.0sp</item>
+        <item name="android:clickable">true</item>
+    </style>
+    <style name="SettingItemTitle">
+        <item name="android:textSize">16.0sp</item>
+        <item name="android:textColor">@color/c_black_to_white</item>
+    </style>
+    <style name="SettingItemSummer">
+        <item name="android:textSize">10.5sp</item>
+        <item name="android:textColor">@color/summer_text</item>
+    </style>
+     <style name="Icon">
+        <item name="android:textColor">@color/selector_color_icon</item>
+        <item name="android:gravity">center</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+    <style name="upside_apps_btn">
+        <item name="android:textSize">@dimen/upside_apps_btn_text_size</item>
+        <item name="android:textColor">#ff3c3c3c</item>
+        <item name="android:gravity">bottom|center</item>
+        <item name="android:clickable">true</item>
+        <item name="android:shadowColor">#cdffffff</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+        <item name="android:layerType">software</item>
+    </style>
+   
+    
+    <style name="Theme.AssistiveTouchDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/Animation_Activity_Dialog</item>
+        <item name="android:backgroundDimEnabled">false</item>
+         <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+    
+   <style name="Theme.ProgressDialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:backgroundDimEnabled">false</item>
+         <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+    
+    <style name="Animation_Activity_Dialog">
+        <item name="android:windowEnterAnimation">@anim/zoom_enter</item>
+        <item name="android:windowExitAnimation">@anim/zoom_exit</item>
+    </style>
+    <style name="Transparent">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Translucent</item>
+    </style>
+</resources>

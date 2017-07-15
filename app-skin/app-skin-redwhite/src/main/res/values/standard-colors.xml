@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 默认红白主题基础色 -->
+
+    <!-- "涨"，"涨"相关数字/背景色块-->
+    <color name="yt_color_01">#ffde323a</color>
+    <!-- "跌"，"跌"相关数字/背景色块-->
+    <color name="yt_color_02">#ff54b88e</color>
+    <!-- 主色调，强调性文字、按钮、icon -->
+    <color name="yt_color_03">#fff64851</color>
+    <!-- icon、按钮辅助色 -->
+    <color name="yt_color_04">#ffffecea</color>
+    <!-- 卡片背景色、深色背景反白 -->
+    <color name="yt_color_05">#ffffffff</color>
+    <!-- 背景色 -->
+    <color name="yt_color_06">#fff6f6f6</color>
+    <!-- 分割线、卡片边缘描边色-->
+    <color name="yt_color_07">#ffececec</color>
+    <!-- 底部菜单颜色 -->
+    <color name="yt_color_08">#ff7d7d7d</color>
+    <!-- 次要文字、输入框文字 -->
+    <color name="yt_color_09">#ffbfbfbf</color>
+    <!-- 常规文字、副标题、表格标题，时间-->
+    <color name="yt_color_10">#ff939393</color>
+    <!-- 常规文字、内容标题 -->
+    <color name="yt_color_11">#ff535353</color>
+    <color name="yt_color_12">#ffff883c</color>
+    <color name="yt_color_13">#fffac13e</color>
+    <color name="yt_color_14">#ff2070f1</color>
+    <color name="yt_color_15">#ffbb61ef</color>
+</resources>

@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+    
+    <com.ttlove.widget.TitleBar
+	       android:id="@+id/home_title_view"
+	       android:layout_height="wrap_content"
+	       android:layout_width="match_parent"
+	      />
+	   
+	 <View
+           android:id="@+id/divide"
+           android:layout_height="2.0px"
+           android:layout_width="match_parent"
+           android:background="@drawable/title_shadow"
+	    />
+	<com.ttlove.widget.TopSelectBar
+	    android:id="@+id/topselectbar"
+	    android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+	    />
+	    
+    <com.ttlove.widget.HorizontalCellScrollView  
+	    android:id="@+id/horizontal_cell_scroll_view"
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+    >
+   
+    
+  	</com.ttlove.widget.HorizontalCellScrollView>
+	  	
+	    
+</LinearLayout>
+ 	

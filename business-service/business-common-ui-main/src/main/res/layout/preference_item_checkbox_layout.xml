@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     android:orientation="vertical" 
+     android:layout_width="fill_parent" 
+     android:layout_height="wrap_content" 
+     android:paddingLeft="10dip"
+     android:paddingRight="10dip"
+     >
+     <RelativeLayout
+          android:id="@+id/ItemParentView"
+          android:layout_width="fill_parent" 
+     	  android:layout_height="wrap_content"
+     	  android:clickable="true"
+     	  android:background="@drawable/bg_list_item" 
+     	  android:paddingRight="5dip"
+     	  android:paddingTop="5dip"
+     	  android:paddingBottom="5dip"
+          >
+	     <ImageView
+	         android:id="@+id/left_icon" 
+	          android:layout_width="wrap_content" 
+	          android:layout_height="wrap_content" 
+	          android:layout_alignParentLeft="true"
+	          android:layout_centerVertical="true"
+	           android:src="@drawable/setting_app_download"
+	          android:visibility="gone"
+	         />
+
+	      <include 
+	          layout="@layout/item_text_layout"
+	          android:layout_width="wrap_content" 
+	          android:layout_height="wrap_content" 
+	          android:layout_toRightOf="@id/left_icon"
+	          android:layout_marginLeft="5.0dip"
+	          android:layout_centerVertical="true"
+	          />
+	      <com.ttlove.widget.SlipButton
+              android:id="@+id/checkbox"
+              android:layout_width="80dp" 
+              android:layout_height="27dp"
+              android:layout_alignParentRight="true"
+	          android:layout_centerVertical="true"
+              />
+	      
+	  </RelativeLayout>
+    
+      <View 
+        android:id="@+id/divider_bottom"
+        android:layout_width="fill_parent" 
+        android:layout_height="0.3dip"
+        android:background="#55555555"
+       />
+</LinearLayout>

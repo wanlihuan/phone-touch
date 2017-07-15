@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <com.ttlove.widget.TitleBar
+       android:id="@+id/home_title_view"
+       android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+       />
+   
+    <View
+        android:id="@+id/divide"
+        android:layout_height="2.0px"
+        android:layout_width="match_parent"
+        android:background="@drawable/title_shadow"
+     />
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            >
+        <RelativeLayout
+                android:layout_marginTop="10dip"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+            <ImageView android:id="@+id/appIcon"
+                       android:layout_width="70.0dip"
+                       android:layout_height="70.0dip"
+                       android:layout_marginLeft="10.0dip"
+                       android:layout_marginRight="10.0dip"
+                       android:scaleType="fitXY" />
+            <TextView android:textSize="18.0sp"
+                      android:textColor="@color/black"
+                      android:ellipsize="middle"
+                      android:gravity="center_vertical"
+                      android:id="@+id/appName"
+                      android:layout_width="fill_parent"
+                      android:layout_height="25.0dip"
+                      android:singleLine="true"
+                      android:layout_toRightOf="@+id/appIcon"
+                      android:layout_alignTop="@+id/appIcon" />
+            <TextView android:textSize="13.0sp"
+                      android:id="@+id/appSize"
+                      android:layout_alignLeft="@+id/appName"
+                      android:layout_alignBottom="@+id/appIcon"
+                      android:layout_height="18dip"
+                      android:textColor="#888888"
+                      android:layout_width="match_parent"/>
+            <TextView android:textSize="13.0sp"
+                      android:id="@+id/version"
+                      android:textColor="#888888"
+                      android:layout_marginBottom="4.0dip"
+                      android:layout_above="@+id/appSize"
+                      android:layout_alignLeft="@+id/appName"
+                      android:layout_height="18dip"
+                      android:layout_width="match_parent"/>
+            <Button android:textSize="13.0sp"
+                    android:gravity="center"
+                    android:id="@+id/downloadBtn"
+                    android:background="@drawable/btn_download_details"
+                    android:layout_width="80.0dip"
+                    android:layout_height="35.0dip"
+                    android:layout_marginRight="10.0dip"
+                    android:text="安装"
+                    android:singleLine="true"
+                    android:textColor="@drawable/btn_download_details_text"
+                    android:layout_alignBottom="@+id/appIcon"
+                    android:layout_alignParentRight="true" />
+            <LinearLayout
+                          android:id="@+id/shortcutLayout"
+                          android:gravity="center_vertical"
+                          android:orientation="vertical"
+                          android:layout_width="fill_parent"
+                          android:layout_height="wrap_content"
+                          android:layout_below="@+id/appIcon">
+                    <com.android.phone.assistant.AppScreenShotScrollView
+                            android:id="@+id/appSSView"
+                            android:background="#cf6e6e6e"
+                            android:scrollbars="none"
+                            android:fadingEdge="none"
+                            android:layout_width="fill_parent"
+                            android:layout_height="200.0dip"
+                            android:layout_marginTop="10.0dip"
+                            />
+                    <TextView
+                            android:id="@+id/loading"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:text="loading..."
+                            android:textSize="18sp"
+                            android:textColor="@color/black"
+                            ></TextView>
+            </LinearLayout>
+            <TextView android:textSize="15.0sp"
+                      android:textColor="#888888"
+                      android:id="@+id/appDescTitle"
+                      android:padding="10.0dip"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:text="简介"
+                      android:layout_below="@+id/shortcutLayout"/>
+            <TextView android:textSize="13.0dip"
+                      android:textColor="@color/black"
+                      android:id="@+id/appDesc"
+                      android:padding="10.0dip"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginTop="-15.0dip"
+                      android:singleLine="false"
+                      android:layout_below="@+id/appDescTitle"
+                      android:lineSpacingMultiplier="1.2" />
+        </RelativeLayout>
+
+    </ScrollView>
+</LinearLayout>

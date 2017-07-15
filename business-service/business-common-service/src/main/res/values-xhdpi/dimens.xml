@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <dimen name="size_dialog">600.0px</dimen>
+    <dimen name="upside_apps_btn_text_size">13.0sp</dimen>
+    <dimen name="app_icon_size">85dip</dimen>
+</resources>

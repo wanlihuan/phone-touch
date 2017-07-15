@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout 
+    android:gravity="center" 
+    android:orientation="vertical" 
+    android:id="@+id/container" 
+    android:background="#00000000" 
+    android:paddingTop="40.0dip" 
+    android:paddingBottom="40.0dip" 
+    android:clickable="true" 
+    android:layout_width="wrap_content" 
+    android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+ 
+    <TextView 
+        android:textSize="20.0sp" 
+        android:textColor="#ffffffff" 
+        android:gravity="center" 
+        android:id="@+id/title" 
+        android:background="@drawable/upside_apps_title_bg" 
+        android:clickable="true" android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:text="选择应用程序" 
+        android:shadowColor="#cd000000" 
+        android:shadowDx="0.0" 
+        android:shadowDy="3.0" 
+        android:shadowRadius="7.0" />
+    <!--         android:background="@drawable/upside_apps_content_bg"  -->
+    <LinearLayout 
+        android:id="@+id/gridParent"
+        android:orientation="vertical" 
+        android:clickable="true" 
+        android:layout_width="wrap_content" 
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title"
+        android:layout_alignLeft="@id/title"
+        android:layout_alignRight="@id/title"
+        android:gravity="center"
+        >
+        <GridView 
+            android:background="@drawable/upside_apps_content_bg"
+            android:scrollbarThumbVertical="@drawable/folder_scrollbar_v" 
+            android:scrollbarStyle="insideOverlay" 
+            android:id="@+id/app_content" 
+            android:scrollbars="vertical" 
+            android:animationCache="false" 
+            android:layout_width="wrap_content" 
+            android:layout_height="fill_parent" 
+            android:listSelector="@android:color/transparent" 
+            android:cacheColorHint="#00000000" 
+            android:numColumns="4" 
+            
+            android:layout_weight="1.0" />
+   <!-- android:choiceMode="multipleChoice"  -->
+       <LinearLayout 
+        android:gravity="center" 
+        android:orientation="horizontal" 
+        android:id="@+id/buttons_container" 
+        android:background="@drawable/upside_apps_button_bg" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        >
+        <TextView 
+            android:id="@+id/btnCancel" 
+            android:background="@drawable/upside_apps_cancel_btn" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginRight="10.0dip" 
+            android:text="取消" 
+            style="@style/upside_apps_btn" />
+        <TextView 
+            android:id="@+id/btnOk" 
+            android:background="@drawable/upside_apps_ok_btn" 
+            android:layout_width="wrap_content" 
+            android:layout_height="wrap_content" 
+            android:layout_marginLeft="10.0dip" 
+            android:text="确定" 
+            style="@style/upside_apps_btn" />
+    </LinearLayout>
+   </LinearLayout>
+     
+     <ProgressBar 
+            android:id="@+id/progress_bar"
+           android:layout_height="wrap_content"
+       	   android:layout_width="wrap_content"
+       	   android:layout_centerInParent="true"
+           /> 
+</RelativeLayout>

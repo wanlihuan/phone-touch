@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_item_height_ext">50.0dip</dimen>
+    <dimen name="top_tabs_width">86.29999dip</dimen>
+    <dimen name="top_tabs_height">53.0dip</dimen>
+    <dimen name="title_search_right_padding">15.0dip</dimen>
+    <dimen name="game_categoty_icon_height">113.0dip</dimen>
+    <dimen name="ring_categoty_icon_height">115.0dip</dimen>
+    <dimen name="first_category_icon_height">140.0dip</dimen>
+    <dimen name="banner_min_height">140.0dip</dimen>
+    <dimen name="home_tabs_height">73.0dip</dimen>
+    <dimen name="home_sms_enter_height">60.0dip</dimen>
+    <dimen name="wallpaper_list_header_item_height">140.0dip</dimen>
+    <dimen name="hot_hey_height">83.0dip</dimen>
+    <dimen name="event_icon_info_margin_left">15.0dip</dimen>
+    <dimen name="event_icon_info_margin_top">15.0dip</dimen>
+    <dimen name="screen_width">360.0dip</dimen>
+    <dimen name="app_topic_icon_height">190.0dip</dimen>
+    <dimen name="share_history_top_bg">370.0dip</dimen>
+    <dimen name="share_guide_txt_size">16.0dip</dimen>
+    <dimen name="share_guide_next_size">50.0dip</dimen>
+    <dimen name="share_guide_next_margin_top">45.0dip</dimen>
+    
+    <dimen name="top_select_bar_h">65.0dip</dimen>
+    <dimen name="v5_text_font_size_list_primary">15.0sp</dimen>
+    <dimen name="v5_text_font_size_list_secondary">12.0sp</dimen>
+</resources>

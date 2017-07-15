@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+        <style name="AppTheme" parent="@android:style/Theme.Light.NoTitleBar" />
+       
+       <style name="style_item_primary_title_text">
+        <item name="android:textSize">16.0dip</item>
+        <item name="android:textColor">@color/item_primary_title_text_color</item>
+       </style>
+       <style name="style_item_summary_title_text">
+	        <item name="android:textSize">12.0dip</item>
+	        <item name="android:textColor">@color/item_summary_title_text_color</item>
+   	   </style>
+       <style name="shadowTextBlack">
+        <item name="android:textColor">#ff404040</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+       </style>
+       <style name="ThemeManager.TextAppearance.List" parent="@android:style/TextAppearance">
+        <item name="android:textSize">@dimen/v5_text_font_size_list_primary</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@color/v5_list_text_light</item>
+    </style>
+     <style name="ThemeManager.TextAppearance.List.Primary" parent="@style/ThemeManager.TextAppearance.List" />
+    <style name="ThemeManager.TextAppearance.List.Secondary" parent="@style/ThemeManager.TextAppearance.List">
+        <item name="android:textSize">@dimen/v5_text_font_size_list_secondary</item>
+        <item name="android:textStyle">normal</item>
+        <item name="android:textColor">@color/v5_list_secondary_text_light</item>
+        <item name="android:shadowColor">@color/v5_list_secondary_text_shadow_light</item>
+        <item name="android:shadowDx">0.0</item>
+        <item name="android:shadowDy">1.0</item>
+        <item name="android:shadowRadius">1.0</item>
+    </style>
+    <style name="PreviewTheme" >
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowAnimationStyle">@style/Animation_Dialog</item>
+        <item name="android:backgroundDimEnabled">false</item>
+         <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+     <style name="Animation_Dialog">
+        <item name="android:windowEnterAnimation">@anim/preview_theme_zoom_enter</item>
+        <item name="android:windowExitAnimation">@anim/preview_theme_zoom_exit</item>
+    </style>
+    <style name="BottomPopAnimationFade">
+	    <item name="android:windowEnterAnimation">@anim/fade_in</item>
+	    <item name="android:windowExitAnimation">@anim/fade_out</item>
+	</style> 
+	<style name="MainLogoTheme" parent="@android:style/Theme.Dialog">
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowAnimationStyle">@style/Animation_Logo</item>
+    </style>
+    <style name="Animation_Logo">
+        <item name="android:windowEnterAnimation">@anim/logo_enter</item>
+        <item name="android:windowExitAnimation">@anim/logo_exit</item>
+    </style>
+     
+</resources>

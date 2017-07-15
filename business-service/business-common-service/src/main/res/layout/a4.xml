@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content">
+    <RelativeLayout 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content"
+        >
+	    <com.ttlove.widget.PreferenceCategoryView
+	        android:id="@+id/AnimationCategoryView"
+	        android:layout_width="fill_parent" 
+	        android:layout_height="wrap_content"
+	        android:layout_marginTop="5dip"
+	    />
+	    
+	    <com.ttlove.widget.RadioGroup
+	        android:id="@+id/RadioGroup" 
+	        android:orientation="vertical" 
+	        android:layout_width="fill_parent" 
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/AnimationCategoryView"
+	        android:layout_marginTop="5dip">
+	       
+	        <com.ttlove.widget.PreferenceRadioView
+	            android:id="@+id/animation1"
+	            android:layout_width="fill_parent" 
+	        	android:layout_height="fill_parent"
+	            />
+	        
+	        <com.ttlove.widget.PreferenceRadioView
+	            android:id="@+id/animation2"
+	            android:layout_width="fill_parent" 
+	        	android:layout_height="fill_parent"
+	            />
+	       
+	     </com.ttlove.widget.RadioGroup>
+    
+	     <com.ttlove.widget.PreferenceCategoryView
+	        android:id="@+id/XianshiXiaoguoCategoryView"
+	        android:layout_width="fill_parent" 
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/RadioGroup"
+	        android:layout_marginTop="10dip"
+	    />
+	    
+	    <com.ttlove.widget.RadioGroup
+	        android:id="@+id/RadioGroup_1" 
+	        android:orientation="vertical" 
+	        android:layout_width="fill_parent" 
+	        android:layout_height="wrap_content"
+	        android:layout_below="@id/XianshiXiaoguoCategoryView"
+	        android:layout_marginTop="5dip">
+	       
+	        <com.ttlove.widget.PreferenceRadioView
+	            android:id="@+id/XianshiXiaoguo_1"
+	            android:layout_width="fill_parent" 
+	        	android:layout_height="fill_parent"
+	            />
+	        
+	        <com.ttlove.widget.PreferenceRadioView
+	            android:id="@+id/XianshiXiaoguo_2"
+	            android:layout_width="fill_parent" 
+	        	android:layout_height="fill_parent"
+	            />
+	       
+	     </com.ttlove.widget.RadioGroup>
+	     
+     </RelativeLayout>
+</ScrollView>

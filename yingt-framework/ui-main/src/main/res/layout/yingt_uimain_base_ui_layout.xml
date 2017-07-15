@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/yingt_uimain_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout
+        android:id="@+id/yingt_uimain_toolbar_root"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/yingt_uimain_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/yingt_uimain_toolbar_root"
+        />
+    <RelativeLayout
+        android:id="@+id/yingt_uimain_keyboard_root"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        />
+</RelativeLayout>

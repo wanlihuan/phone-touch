@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center" 
+    android:id="@+id/body" 
+    android:background="@drawable/home_list_item_selector" 
+    android:layout_width="fill_parent" 
+    android:layout_height="@dimen/list_item_height" 
+    android:layout_centerVertical="true"
+  >
+  <!-- android:src="@drawable/default_download" -->
+    <ImageView 
+        android:id="@+id/icon" 
+        android:background="@drawable/app_icon_list_bg" 
+        android:layout_width="@dimen/list_item_height_ext" 
+        android:layout_height="@dimen/list_item_height_ext" 
+        android:layout_marginLeft="8.0dip" 
+        android:layout_marginRight="8.0dip" 
+        android:scaleType="fitXY" 
+        android:cropToPadding="true" 
+        android:layout_alignParentLeft="true" 
+        android:layout_centerVertical="true" />
+    <ImageView 
+        android:id="@+id/icon_frame" 
+        android:visibility="gone" 
+        android:layout_width="@dimen/list_item_height" 
+        android:layout_height="@dimen/list_item_height" 
+        android:background="@drawable/icon_frame_first"/>
+    <TextView 
+        android:textSize="@dimen/action_text_size" 
+        android:textColor="@color/item_primary_title_text_color" 
+        android:gravity="center" 
+        android:id="@+id/app_status" 
+        android:background="@drawable/home_list_item_right_btn" 
+        android:paddingTop="10.0dip" 
+        android:clickable="true" 
+        android:layout_width="@dimen/action_button_width" 
+        android:layout_height="@dimen/list_item_height" 
+        android:layout_marginLeft="5.0dip" 
+        android:drawableTop="@drawable/btn_icon_download" 
+        android:layout_alignParentRight="true" 
+        android:text="下载"/>
+    
+    <TextView 
+        android:gravity="right|center" 
+        android:id="@+id/size" 
+        android:layout_width="50.0dip" 
+        android:layout_height="wrap_content" 
+        android:layout_marginLeft="5.0dip" 
+        android:layout_marginTop="10.0dip" 
+        android:singleLine="true" 
+        android:layout_toLeftOf="@id/app_status"
+        style="@style/style_item_summary_title_text" 
+        android:text="2.9M"/>
+    
+    <TextView 
+        android:id="@+id/name" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:singleLine="true" 
+        android:layout_toRightOf="@id/icon" 
+        android:layout_alignBottom="@id/size"
+        style="@style/style_item_primary_title_text" />
+    
+    <ImageView android:id="@+id/app_level" 
+        android:layout_width="wrap_content" 
+        android:layout_height="wrap_content" 
+        android:src="@drawable/rating_bg_10" 
+        android:layout_toRightOf="@id/icon" 
+        android:layout_below="@id/name" 
+        style="@style/style_item_summary_title_text" />
+    <TextView 
+        android:gravity="right|center" 
+        android:id="@+id/download_count" 
+        android:layout_width="100.0dip" 
+        android:layout_height="wrap_content" 
+        android:singleLine="true" 
+        android:layout_toLeftOf="@id/app_status" 
+        android:layout_below="@id/size" 
+        style="@style/style_item_summary_title_text" />
+    <TextView 
+        android:id="@+id/app_prompt" 
+        android:layout_width="fill_parent" 
+        android:layout_height="wrap_content" 
+        android:singleLine="true" 
+        android:layout_toLeftOf="@id/app_status" 
+        android:layout_toRightOf="@id/icon" 
+        android:layout_below="@id/app_level" 
+        style="@style/style_item_summary_title_text" 
+        android:text="这是一款优秀的软件！"/>
+</RelativeLayout>

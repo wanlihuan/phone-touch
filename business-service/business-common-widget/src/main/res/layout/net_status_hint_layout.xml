@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="50dp"
+    android:orientation="vertical" >
+	<TextView 
+	    android:id="@+id/view1"
+	    android:layout_width="wrap_content"  
+    	android:layout_height="wrap_content"
+    	android:drawableTop="@drawable/notwork_be_illogical"
+    	android:drawablePadding="15dp"
+    	android:textSize="20dp"
+    	android:text="加载失败，请稍后刷新~"
+	    />
+	
+	<Button 
+        android:layout_width="wrap_content"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/view1"
+    	android:layout_centerHorizontal="true"
+    	android:layout_marginTop="22dp"
+    	android:paddingLeft="60dp"
+    	android:paddingRight="60dp"
+    	android:clickable="false"
+    	android:textSize="20dp"
+    	android:text="刷新试试"
+        />
+</RelativeLayout>

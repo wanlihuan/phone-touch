@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+   
+    <color name="main_color">#ff0099cc</color>
+    <color name="color_icon_text_pressed">#ff00aeff</color>
+    <color name="color_icon_text_switch_selected">#ffffffff</color>
+    <color name="color_icon_text_switch_unselected">#ff7a7a7a</color>
+    <color name="color_icon_text">#ffffffff</color>
+    <color name="trans_black">#c7000000</color>
+    <color name="summer_text">#ff555555</color>
+</resources>

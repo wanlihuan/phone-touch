@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_item_height_ext">52.0dip</dimen>
+    <dimen name="top_tabs_width">75.5dip</dimen>
+    <dimen name="top_tabs_height">53.0dip</dimen>
+    <dimen name="title_search_right_padding">10.0dip</dimen>
+    <dimen name="game_categoty_icon_height">100.0dip</dimen>
+    <dimen name="first_category_icon_height">130.0dip</dimen>
+    <dimen name="banner_min_height">130.0dip</dimen>
+    <dimen name="home_tabs_height">73.0dip</dimen>
+    <dimen name="home_sms_enter_height">60.0dip</dimen>
+    <dimen name="wallpaper_list_header_item_height">130.0dip</dimen>
+    <dimen name="hot_hey_height">83.0dip</dimen>
+    <dimen name="event_icon_info_margin_left">20.0dip</dimen>
+    <dimen name="event_icon_info_margin_top">20.0dip</dimen>
+    <dimen name="app_topic_icon_height">180.0dip</dimen>
+    <dimen name="share_history_top_bg">340.0dip</dimen>
+    <dimen name="share_guide_txt_size">12.0dip</dimen>
+    <dimen name="share_guide_next_size">45.0dip</dimen>
+    <dimen name="share_guide_next_margin_top">30.0dip</dimen>
+    
+     <dimen name="top_select_bar_h">45.0dip</dimen>
+</resources>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">安卓小白点</string>
+    <string name="activity_not_found">"应用程序已被卸载。"</string>
+    <string name="xiaobaidian_alpha_text">"小白点透明度 (%1$d"</string>
+    <string name="xiaobaidian_daxiao_text">"小白点大小 (%1$d"</string>
+</resources>
