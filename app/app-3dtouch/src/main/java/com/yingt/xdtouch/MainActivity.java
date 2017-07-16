@@ -1,10 +1,14 @@
 package com.yingt.xdtouch;
 
+import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
+import com.android.phone.assistant.util.ThemeCache;
 import com.touch.panel.WindowWrapper;
+import com.touch.panel.util.DeviceInfoUtil;
+import com.touch.panel.widget.CenterPanelView;
 import com.touch.panel.widget.FloatView;
 import com.yingt.uimain.ui.MainTabActivity;
 
@@ -22,16 +26,20 @@ public class MainActivity extends MainTabActivity {
 
         mWindowWrapper = new WindowWrapper(this);
 
-        creatPanelWindow();
+        CenterPanelView centerPanelView = new CenterPanelView(this);
+        centerPanelView.setBackgroundColor(Color.RED);
+        mWindowWrapper.addView(centerPanelView);
+
+        creatFloatWindow();
     }
 
     /**
      * 创建面板视图
      */
-    private void creatPanelWindow() {
+    private void creatFloatWindow() {
 
         final FloatView floatView = new FloatView(this);
-        floatView.setWindowLayout(0, 0, 150, 150);
+        floatView.setWindowLayout(0, 0, 100, 100);
         floatView.setImageBitmap(null);
         mWindowWrapper.addView(floatView);
 
@@ -39,8 +47,14 @@ public class MainActivity extends MainTabActivity {
             @Override
             public void onClick(View v) {
                 Toast.makeText(MainActivity.this, "被点击", Toast.LENGTH_LONG).show();
+                int w = DeviceInfoUtil.getScreenShortSize(getApplicationContext());
+                int h = DeviceInfoUtil.getScreenLongSize(getApplicationContext()) - floatView.getStatusBarHeight();
+                int newWh = 450;
+                floatView.setWindowLayout((w - newWh) / 2, (h - newWh) / 2, newWh, newWh);
+                mWindowWrapper.updateViewLayout(floatView);
             }
         });
+
         floatView.setOnMoveListener(new FloatView.OnMoveListener() {
             public void onMove(int x, int y) {
                 // TODO Auto-generated method stub

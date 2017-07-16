@@ -1,0 +1,38 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
+
+    defaultConfig {
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+    // 日志模块
+    compile 'com.orhanobut:logger:1.15'
+
+    // Retrofit2 + Gson 转换器 + RxJava2 实现网络请求自动转换 json 对象bean
+    compile 'com.squareup.retrofit2:retrofit:2.2.0'
+    compile 'com.squareup.retrofit2:adapter-rxjava2:2.2.0' // 支持 rxjava2 数据处理返回
+    compile 'com.squareup.retrofit2:converter-gson:2.2.0' // 支持 Gson 转换器数据处理返回
+    compile 'io.reactivex.rxjava2:rxjava:2.0.7'
+    compile 'io.reactivex.rxjava2:rxandroid:2.0.1'
+    compile 'lib.gorden.rxbus2:rxbus:2.0.1' // 事件总线 https://github.com/XiaoQiWen/RxBus2
+//    compile 'com.amitshekhar.android:rx2-android-networking:1.0.0'
+
+    // 图片加载库
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+}

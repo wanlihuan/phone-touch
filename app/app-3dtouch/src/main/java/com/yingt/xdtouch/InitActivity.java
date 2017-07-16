@@ -16,7 +16,7 @@ public class InitActivity extends SplashActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-//        Intent serIntent = new Intent(this, FloatingService.class);
+        Intent serIntent = new Intent(this, FloatingService.class);
 //        startService(serIntent);
     }
 

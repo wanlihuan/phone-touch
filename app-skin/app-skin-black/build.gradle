@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+
+def skinName = "BLACK.skin"
+
+android {
+    compileSdkVersion 25
+    buildToolsVersion '25.0.2'
+    defaultConfig {
+        applicationId "com.yingtskin.black"
+        minSdkVersion 19
+        targetSdkVersion 25
+        versionCode 1
+        versionName "1.0"
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+
+}
+
+// final def TARGET_SKIN_DIR = '../skin-package/'
+//final def TARGET_SKIN_DIR = 'build/outputs/skin/'
+final def TARGET_SKIN_DIR = '../../business-service/business-common-ui-main/src/main/assets/skins/black/'
+
+gradle.projectsEvaluated {
+    assembleRelease.doLast {
+        println("=====================assembleRelease.doLast.begin.=========================")
+
+        def dir = new File(TARGET_SKIN_DIR)
+        if (!dir.exists()) {
+            dir.mkdirs()
+        }
+
+        def f = new File(TARGET_SKIN_DIR + skinName)
+        if (f.exists()) {
+            f.delete()
+        }
+
+        copy {
+            from('build/outputs/apk')
+            into(TARGET_SKIN_DIR)
+            include '*.apk'
+            exclude '**/*-unaligned.apk'
+            rename ('app-skin-black-release-unsigned.apk', skinName)
+        }
+        // copy config
+        copy {
+            from('src/main/assets')
+            into(TARGET_SKIN_DIR)
+            include 'config'
+        }
+
+        println("=====================assembleRelease.doLast success.=========================")
+    }
+
+    assembleDebug.doLast {
+        println("=====================assembleDebug.doLast.begin.=========================")
+
+        def dir = new File(TARGET_SKIN_DIR)
+        if (!dir.exists()) {
+            dir.mkdirs()
+        }
+
+        def f = new File(TARGET_SKIN_DIR + skinName)
+        if (f.exists()) {
+            f.delete()
+        }
+
+        copy {
+            from('build/outputs/apk')
+            into(TARGET_SKIN_DIR)
+            include '*.apk'
+            exclude '**/*-unaligned.apk'
+            rename ('app-skin-black-debug.apk', skinName)
+        }
+
+        println("=====================assembleDebug.doLast success.=========================")
+    }
+}

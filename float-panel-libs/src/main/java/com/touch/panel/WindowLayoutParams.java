@@ -23,6 +23,8 @@ public class WindowLayoutParams {
 
         wmParams.flags = WindowManager.LayoutParams.FLAG_NOT_TOUCH_MODAL
                 | WindowManager.LayoutParams.FLAG_NOT_FOCUSABLE;
+//        |WindowManager.LayoutParams.FLAG_WATCH_OUTSIDE_TOUCH
+//        |WindowManager.LayoutParams.FLAG_TURN_SCREEN_ON;
         /*
          * 下面的flags属性的效果形同“锁定”。
          * 悬浮窗不可触摸，不接受任何事件,同时不影响后面的事件响应。

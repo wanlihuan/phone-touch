@@ -5,6 +5,9 @@ import android.view.View;
 import android.view.WindowManager;
 
 /**
+ *  浮动视图的特点：
+ *  1. 如果 window 窗口全屏时，浮动视图也是全屏展示的，此时事件会被其截获
+ *     可利用该特点实现在显示浮动视图时不可点击其他视图
  * Created by laihuan.wan on 2017/7/15 0015.
  */
 
