@@ -6,9 +6,9 @@ import android.widget.Toast;
 
 import com.fiona.fwindow.WindowWrapper;
 import com.fiona.fwindow.util.DeviceInfoUtil;
-import com.fiona.fwindow.widget.CenterPanelView;
-import com.fiona.fwindow.widget.ControlCenterPanel;
-import com.fiona.fwindow.widget.FloatView;
+import com.fiona.panel.CenterPanelView;
+import com.fiona.panel.ControlCenterPanel;
+import com.fiona.panel.FloatView;
 import com.yingt.uimain.ui.MainTabActivity;
 
 /**

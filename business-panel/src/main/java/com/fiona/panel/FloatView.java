@@ -1,4 +1,4 @@
-package com.fiona.fwindow.widget;
+package com.fiona.panel;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -13,7 +13,6 @@ import android.view.View;
 import android.view.WindowManager;
 
 import com.fiona.fwindow.IFloatView;
-import com.fiona.fwindow.R;
 import com.fiona.fwindow.WindowLayoutParams;
 
 /**

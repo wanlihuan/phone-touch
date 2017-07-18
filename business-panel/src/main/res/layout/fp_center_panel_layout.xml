@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fiona.panel.widget.Workspace xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/workspace"
+    android:layout_width="@dimen/size_dialog"
+    android:layout_height="@dimen/size_dialog"
+    android:layout_centerInParent="true" />
