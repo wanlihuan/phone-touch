@@ -1,5 +1,5 @@
 
-package com.touch.panel.util;
+package com.fiona.fwindow.util;
 
 
 import android.app.AppOpsManager;

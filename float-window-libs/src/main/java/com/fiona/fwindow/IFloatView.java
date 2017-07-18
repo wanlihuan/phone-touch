@@ -1,4 +1,4 @@
-package com.touch.panel;
+package com.fiona.fwindow;
 
 import android.view.View;
 import android.view.WindowManager;

@@ -1,12 +1,12 @@
-package com.touch.panel;
+package com.fiona.fwindow;
 
 import android.content.Context;
 import android.graphics.PixelFormat;
 import android.view.Gravity;
 import android.view.WindowManager;
 
-import com.touch.panel.util.DeviceInfoUtil;
-import com.touch.panel.util.SmartFloatUtil;
+import com.fiona.fwindow.util.DeviceInfoUtil;
+import com.fiona.fwindow.util.SmartFloatUtil;
 
 /**
  * Created by laihuab.wan on 2017/7/15 0015.

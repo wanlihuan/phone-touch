@@ -1,4 +1,4 @@
-package com.touch.panel.widget;
+package com.fiona.fwindow.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;
@@ -8,9 +8,9 @@ import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 
-import com.touch.panel.IFloatView;
-import com.touch.panel.R;
-import com.touch.panel.WindowLayoutParams;
+import com.fiona.fwindow.IFloatView;
+import com.fiona.fwindow.R;
+import com.fiona.fwindow.WindowLayoutParams;
 
 /**
  * Created by laihuan.wan on 2017/7/15 0015.

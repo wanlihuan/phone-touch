@@ -1,4 +1,4 @@
-package com.touch.panel.widget;
+package com.fiona.fwindow.widget;
 
 
 import android.annotation.SuppressLint;
@@ -16,7 +16,7 @@ import android.view.animation.Animation.AnimationListener;
 import android.view.animation.TranslateAnimation;
 import android.widget.LinearLayout;
 
-import com.touch.panel.R;
+import com.fiona.fwindow.R;
 
 
 public class Workspace extends ViewGroup implements View.OnClickListener{

@@ -1,4 +1,4 @@
-package com.touch.panel.widget;
+package com.fiona.fwindow.widget;
 
 import android.content.Context;
 import android.graphics.Bitmap;

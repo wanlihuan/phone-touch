@@ -1,16 +1,14 @@
 package com.yingt.xdtouch;
 
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 
-import com.android.phone.assistant.util.ThemeCache;
-import com.touch.panel.WindowWrapper;
-import com.touch.panel.util.DeviceInfoUtil;
-import com.touch.panel.widget.CenterPanelView;
-import com.touch.panel.widget.ControlCenterPanel;
-import com.touch.panel.widget.FloatView;
+import com.fiona.fwindow.WindowWrapper;
+import com.fiona.fwindow.util.DeviceInfoUtil;
+import com.fiona.fwindow.widget.CenterPanelView;
+import com.fiona.fwindow.widget.ControlCenterPanel;
+import com.fiona.fwindow.widget.FloatView;
 import com.yingt.uimain.ui.MainTabActivity;
 
 /**
