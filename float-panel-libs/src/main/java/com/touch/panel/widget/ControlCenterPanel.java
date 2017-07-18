@@ -5,7 +5,6 @@ import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
-import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 
 import com.touch.panel.IFloatView;
@@ -13,27 +12,26 @@ import com.touch.panel.R;
 import com.touch.panel.WindowLayoutParams;
 
 /**
- * Created by laihuan.wan on 2017/7/15 0015.
+ * Created by laihuan.wan on 2017/7/16 0016.
  */
 
-public class CenterPanelView extends RelativeLayout implements IFloatView{
+public class ControlCenterPanel extends RelativeLayout implements IFloatView{
 
-    public CenterPanelView(Context context) {
+    public ControlCenterPanel(Context context) {
         this(context, null);
         // TODO Auto-generated constructor stub
 
     }
 
-    public CenterPanelView(Context context, AttributeSet attrs) {
+    public ControlCenterPanel(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
         // TODO Auto-generated constructor stub
     }
-    public CenterPanelView(Context context, AttributeSet attrs, int defStyle) {
+    public ControlCenterPanel(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         // TODO Auto-generated constructor stub
-        LayoutInflater.from(context).inflate(R.layout.fp_center_panel_layout, this, true);
+        LayoutInflater.from(context).inflate(R.layout.fp_control_center_panel_layout, this, true);
     }
-
 
     @Override
     public View getView() {

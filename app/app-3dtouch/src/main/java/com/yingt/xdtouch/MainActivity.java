@@ -9,6 +9,7 @@ import com.android.phone.assistant.util.ThemeCache;
 import com.touch.panel.WindowWrapper;
 import com.touch.panel.util.DeviceInfoUtil;
 import com.touch.panel.widget.CenterPanelView;
+import com.touch.panel.widget.ControlCenterPanel;
 import com.touch.panel.widget.FloatView;
 import com.yingt.uimain.ui.MainTabActivity;
 
@@ -26,9 +27,14 @@ public class MainActivity extends MainTabActivity {
 
         mWindowWrapper = new WindowWrapper(this);
 
+        ControlCenterPanel controlCenterPanel = new ControlCenterPanel(this);
+        controlCenterPanel.setBackgroundColor(0x5f5f5f5f);
+        mWindowWrapper.addView(controlCenterPanel);
+
         CenterPanelView centerPanelView = new CenterPanelView(this);
-        centerPanelView.setBackgroundColor(Color.RED);
+//        centerPanelView.setBackgroundColor(Color.RED);
         mWindowWrapper.addView(centerPanelView);
+        mWindowWrapper.goneView(centerPanelView);
 
         creatFloatWindow();
     }

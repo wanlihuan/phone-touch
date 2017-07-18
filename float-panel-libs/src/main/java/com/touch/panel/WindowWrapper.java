@@ -39,7 +39,7 @@ public class WindowWrapper {
      *  GONE 隐藏浮动视图
      * @param view
      */
-    public final void goneFloatView(IFloatView view){
+    public final void goneView(IFloatView view){
         view.getView().setVisibility(View.GONE);
     }
 
@@ -47,7 +47,7 @@ public class WindowWrapper {
      *  VISIBLE 显示浮动视图
      * @param view
      */
-    public final void visibleFloatView(IFloatView view){
+    public final void visibleView(IFloatView view){
         view.getView().setVisibility(View.VISIBLE);
     }
 }
