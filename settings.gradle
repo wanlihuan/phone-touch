@@ -1,5 +1,5 @@
 // 主题包生成模块
-include ':app-skin:app-skin-redwhite', ':float-panel-libs'
+include ':app-skin:app-skin-redwhite', ':float-window-libs'
 include ':app-skin:app-skin-black'
 
 // app 个性化管理层

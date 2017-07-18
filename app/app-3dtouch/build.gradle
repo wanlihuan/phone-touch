@@ -28,7 +28,7 @@ dependencies {
     compile project(':business-service:business-common-widget')
 
 
-    compile project(':float-panel-libs')
+    compile project(':float-window-libs')
 
 
 
