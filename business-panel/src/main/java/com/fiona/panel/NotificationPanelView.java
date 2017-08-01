@@ -9,37 +9,29 @@ import android.widget.RelativeLayout;
 
 import com.fiona.fwindow.IFloatView;
 import com.fiona.fwindow.WindowLayoutParams;
-import com.fiona.panel.widget.Workspace;
 
 /**
- * Created by laihuan.wan on 2017/7/15 0015.
+ * Created by laihuan.wan on 2017/7/22 0022.
  */
 
-public class CenterPanelView extends RelativeLayout implements IFloatView {
+public class NotificationPanelView extends RelativeLayout implements IFloatView {
 
-    public CenterPanelView(Context context) {
+    public NotificationPanelView(Context context) {
         this(context, null);
         // TODO Auto-generated constructor stub
 
     }
 
-    public CenterPanelView(Context context, AttributeSet attrs) {
+    public NotificationPanelView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
         // TODO Auto-generated constructor stub
     }
-
-    private Workspace mWorkspace;
-
-    public CenterPanelView(Context context, AttributeSet attrs, int defStyle) {
+    public NotificationPanelView(Context context, AttributeSet attrs, int defStyle) {
         super(context, attrs, defStyle);
         // TODO Auto-generated constructor stub
-        LayoutInflater.from(context).inflate(R.layout.fp_center_panel_layout, this, true);
-        mWorkspace = (Workspace) findViewById(R.id.workspace);
-        for (int i = 0; i < 9; i++) {
-            View btnView = LayoutInflater.from(context).inflate(R.layout.fp_canter_cell_item_layout, null);
-            mWorkspace.addChildView(btnView, i);
-        }
-//        mWorkspace.requestLayout();
+
+//        LayoutInflater.from(context).inflate(R.layout.fp_center_panel_layout, this, true);
+
     }
 
 
@@ -55,10 +47,6 @@ public class CenterPanelView extends RelativeLayout implements IFloatView {
         if (layoutParams == null)
             layoutParams = WindowLayoutParams.getLayoutParamsFullScreen(this.getContext());
         return layoutParams;
-    }
-
-    public Workspace getWorkspace() {
-        return mWorkspace;
     }
 
     @Override

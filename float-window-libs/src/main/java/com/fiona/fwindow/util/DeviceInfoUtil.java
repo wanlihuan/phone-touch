@@ -3,6 +3,7 @@ package com.fiona.fwindow.util;
 import android.app.ActivityManager;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.content.res.Resources;
 import android.graphics.Point;
 import android.graphics.Rect;
 import android.net.wifi.WifiInfo;
@@ -73,6 +74,20 @@ public class DeviceInfoUtil {
     public static int getScreenShortSize(Context context) {
         getScreenSize(context);
         return Math.min(displayMetrics.widthPixels, displayMetrics.heightPixels);
+    }
+
+    public static int getStatusBarHeight(Context context) {
+        Resources resources = context.getResources();
+        int resourceId = resources.getIdentifier("status_bar_height", "dimen","android");
+        int height = resources.getDimensionPixelSize(resourceId);
+        return height;
+    }
+
+    public static int getTitleBarHeight(Context context) {
+        Resources resources = context.getResources();
+        int resourceId = resources.getIdentifier("navigation_bar_height","dimen", "android");
+        int height = resources.getDimensionPixelSize(resourceId);
+        return height;
     }
 
     public static int getOrientation(Context context) {

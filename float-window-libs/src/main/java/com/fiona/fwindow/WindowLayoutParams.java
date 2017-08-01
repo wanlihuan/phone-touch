@@ -1,6 +1,7 @@
 package com.fiona.fwindow;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.graphics.PixelFormat;
 import android.view.Gravity;
 import android.view.WindowManager;
@@ -14,6 +15,14 @@ import com.fiona.fwindow.util.SmartFloatUtil;
 
 public class WindowLayoutParams {
 
+    public static int getWidth(Context context){
+        return DeviceInfoUtil.getScreenShortSize(context);
+    }
+
+    public static int getHeight(Context context){
+        return DeviceInfoUtil.getScreenLongSize(context) -
+                DeviceInfoUtil.getStatusBarHeight(context);
+    }
 
     public static WindowManager.LayoutParams getLayoutParamsFullScreen(Context context) {
         WindowManager.LayoutParams wmParams = new WindowManager.LayoutParams();
@@ -36,8 +45,8 @@ public class WindowLayoutParams {
         wmParams.x = 0;
         wmParams.y = 0;
 
-        wmParams.width = DeviceInfoUtil.getScreenShortSize(context);
-        wmParams.height = DeviceInfoUtil.getScreenLongSize(context);
+        wmParams.width = getWidth(context);
+        wmParams.height = getHeight(context);
 
         return wmParams;
     }

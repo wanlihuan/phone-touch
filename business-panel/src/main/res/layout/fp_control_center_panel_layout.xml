@@ -1,23 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical" android:layout_width="match_parent"
-    android:layout_height="match_parent">
-
-    <RelativeLayout
-        android:id="@+id/rl_notification_parent"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#7fff0000">
-
-    </RelativeLayout>
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#50666666"
+    android:orientation="vertical">
 
     <RelativeLayout
         android:id="@+id/rl_control_center_parent"
         android:layout_width="match_parent"
         android:layout_height="360dp"
         android:layout_alignParentBottom="true"
-        android:background="#afff00ff">
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:padding="15dp"
+        android:background="#efff00ff"
+        >
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/action_point_toolbox_airplane"
+                android:layout_weight="1.0"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:src="@drawable/action_point_toolbox_airplane"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:src="@drawable/action_point_toolbox_airplane"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:src="@drawable/action_point_toolbox_airplane"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:src="@drawable/action_point_toolbox_airplane"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            >
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/action_point_toolbox_airplane"
+                android:layout_weight="1.0"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:src="@drawable/action_point_toolbox_airplane"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:src="@drawable/action_point_toolbox_airplane"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:src="@drawable/action_point_toolbox_airplane"/>
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:src="@drawable/action_point_toolbox_airplane"/>
+        </LinearLayout>
     </RelativeLayout>
 
 </RelativeLayout>

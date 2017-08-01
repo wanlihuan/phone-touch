@@ -5,6 +5,7 @@ import android.graphics.Bitmap;
 import android.graphics.Rect;
 import android.os.Handler;
 import android.os.Message;
+import android.renderscript.Sampler;
 import android.support.v7.widget.AppCompatImageView;
 import android.util.AttributeSet;
 import android.util.Log;
@@ -14,6 +15,7 @@ import android.view.WindowManager;
 
 import com.fiona.fwindow.IFloatView;
 import com.fiona.fwindow.WindowLayoutParams;
+import com.fiona.fwindow.util.DeviceInfoUtil;
 
 /**
  * Created by laihuan.wan on 2017/7/15 0015.
@@ -64,6 +66,12 @@ public class FloatView extends AppCompatImageView implements IFloatView {
     private final int MOVE_TO_BOTTOM = 3;
     private boolean shapeAlphaFlag = false;
     private int maxCount;
+
+    // 视图在 window 中可活动的范围
+    private int minX = 0;
+    private int maxX;
+    private int minY = 0;
+    private int maxY;
 
 
     /**
@@ -298,10 +306,16 @@ public class FloatView extends AppCompatImageView implements IFloatView {
     }
 
     public interface OnMoveListener {
-        public void onMove(int x, int y);
+        void onMove(int x, int y);
     }
 
     private void updateViewPosition(int x, int y) {
+        // 边缘处理
+        if (x < 0) x = 0;
+        if (x > maxX) x = maxX;
+        if (y < 0) y = 0;
+        if (y > maxY) y = maxY;
+
         if (mOnMoveListener != null) {
             isMoving = true;
             mOnMoveListener.onMove(x, y);
@@ -352,5 +366,11 @@ public class FloatView extends AppCompatImageView implements IFloatView {
             if (height >= 0)
                 layoutParams.height = height;
         }
+
+        // 更新最大布局的活动范围
+        minX = 0;
+        maxX = WindowLayoutParams.getWidth(getContext()) - layoutParams.width;
+        minY = 0;
+        maxY = WindowLayoutParams.getHeight(getContext()) - layoutParams.height;
     }
 }
